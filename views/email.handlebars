@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP verification</title>
+
+    <style>
+        .emailContainer {
+            width: fit-content;
+            margin: auto;
+            padding: 40px 40px;
+            background: linear-gradient( to bottom, #FF9019 0%,  #FF9019 50%, #ffff 50%, #ffff 100%
+  );
+        }
+
+        .emailBox {
+            width: fit-content;
+            padding: 30px 60px;
+            min-width: 280px;
+            background: white;
+            display: grid;
+            border: 1px solid rgba(128, 128, 128, 0.158);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.308);
+            height: fit-content;
+            margin: 20px auto;
+        }
+        .companyname{
+            color: #FF9019;
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .code{
+            color: rgb(29, 28, 28);
+            font-size: 20px;
+            text-transform: capitalize;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .subcode{
+            color: rgb(99, 97, 97);
+            font-size: 15px;
+            text-transform: capitalize;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .otp{
+            font-size: 34px;
+            color: black;
+            letter-spacing: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .validPeroid{
+            color: rgba(255, 2, 2, 0.699);
+            font-size: 14px;
+            text-transform: capitalize;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .imp{
+            color: rgba(255, 2, 2, 0.699);
+            font-size: 14px;
+            text-transform: capitalize;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .logo{
+             display: flex;
+            place-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="emailContainer">
+        <div class="emailBox">
+            <div class="logo">
+                <img src="cid:logo" alt="" width="80px" style="margin: auto;">
+            </div>
+            <h1 class="companyname">
+                XplaroKaro
+            </h1>
+            <div class="code">
+                here is your one time password
+            </div>
+            <div class="subcode">
+                to validate your email address
+            </div>
+            <div class="otp">
+                {{otp}}
+            </div>
+            <div class="validPeroid">only valid for 10 min</div>
+            <div class="imp">do not share with anyone</div>
+        </div>
+    </div>
+</body>
+
+</html>
