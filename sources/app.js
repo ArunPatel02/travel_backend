@@ -32,6 +32,10 @@ app.use(passport.session())
 app.use("/api" , userRoutes)
 app.use("/auth" , googleRoutes)
 
+app.get("/" , (req , res)=>{
+  res.status(200).send("Hello welcome to travel website")
+})
+
 
 
 app.listen(port , ()=>{
