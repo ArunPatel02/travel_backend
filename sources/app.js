@@ -17,7 +17,7 @@ app.use(
   );
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://aerial-grid-373812.uc.r.appspot.com",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   }))
@@ -35,5 +35,5 @@ app.use("/auth" , googleRoutes)
 
 
 app.listen(port , ()=>{
-    console.log("app is listening at port 8000")
+    console.log("app is listening at port" , port)
 })

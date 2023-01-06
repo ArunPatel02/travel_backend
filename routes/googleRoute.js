@@ -1,7 +1,7 @@
 const passport = require("passport")
 const route = require("express").Router()
 
-const CLIENT_URL = "http://localhost:3000/";
+const CLIENT_URL = "https://aerial-grid-373812.uc.r.appspot.com";
 
 route.get("/login/success", (req, res) => {
     console.log(req.user)
