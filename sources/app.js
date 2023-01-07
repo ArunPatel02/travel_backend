@@ -17,7 +17,7 @@ app.use(
   );
 
 app.use(cors({
-    origin: "https://aerial-grid-373812.uc.r.appspot.com",
+    origin: ["https://aerial-grid-373812.uc.r.appspot.com" , "http://34.106.232.201"],
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   }))
